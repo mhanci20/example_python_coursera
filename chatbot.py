@@ -10,6 +10,7 @@ def chatbot_response(user_input):
         print("Chatbot: Sen hangi rengi istersin? (Seçenekler: mavi, siyah, kırmızı, sarı, beyaz, turuncu, pembe)")
         user_color = input("Sen: ").lower()
 
+
         # Renkler listesi
         colors = ["mavi", "siyah", "kırmızı", "sarı", "beyaz", "turuncu", "pembe"]
 
@@ -21,6 +22,8 @@ def chatbot_response(user_input):
                 return f"Çok güzel bir renk, ben de {user_color} rengini seviyorum!"
         else:
             return "Üzgünüm, bu renk listede yok. Lütfen seçeneklerden birini seç."
+    elif "kız arkadaş konusunda yardım et" in user_input.lower():
+        return "Bu konuda yardımcı olamam kovboy. Kızlara özel davranman yeterli diye düşünüyorum"
     elif "teşekkürler" in user_input.lower():
         return "Rica ederim! Başka bir sorunuz var mı?"
     else:
